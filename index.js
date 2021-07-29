@@ -7,10 +7,11 @@ const path = require('path');
 const app = express();
 const PORT = 3000;
 
-// // Set Templating Engine & Set the view engine to ejs
+// Set Templating Engine & Set the view engine to ejs
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, '/views'));
-app.use('/static', express.static('public'))
+app.set('views', path.join(__dirname, 'views'));
+
+app.use('/static', express.static('./static'));
 app.use('/css', express.static(__dirname + '/static/css'));
 app.use('/images', express.static(__dirname + '/static/images'));
 app.use('/scripts', express.static(__dirname + '/static/scripts'));
