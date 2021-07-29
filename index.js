@@ -10,9 +10,10 @@ const PORT = 3000;
 // // Set Templating Engine & Set the view engine to ejs
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'));
-app.use('/css', express.static(__dirname + '/public/css'));
-app.use('/images', express.static(__dirname + '/public/images'));
-app.use('/scripts', express.static(__dirname + '/public/scripts'));
+app.use('/static', express.static('public'))
+app.use('/css', express.static(__dirname + '/static/css'));
+app.use('/images', express.static(__dirname + '/static/images'));
+app.use('/scripts', express.static(__dirname + '/static/scripts'));
 
 // // Rerouting Files
 app.use('/', routes);
