@@ -11,7 +11,7 @@ const PORT = 3000;
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
-app.use('/static', express.static('static'));
+app.use('static', express.static('static'));
 app.use('/css', express.static(__dirname + '/static/css'));
 app.use('/images', express.static(__dirname + '/static/images'));
 app.use('/scripts', express.static(__dirname + '/static/scripts'));
