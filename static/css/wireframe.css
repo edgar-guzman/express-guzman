@@ -1,34 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-.bg-lightyellow-50,
-#bg-lightyellow-50 {
-  background-color: rgba(255, 255, 107, 0.3);
-}
-
-/* .header {
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  position: fixed;
-  font-size: 18px;
-  transition: all 300ms ease-in-out;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-  scroll-margin: 15px;
 }
-
-.scroll-down .header {
-  transform: translate3d(0, -100%, 0);
-}
-
-.scroll-up .header {
-  filter: drop-shadow(0 -10px 20px #aaaaaa);
-}
-
-.menu-is-open {
-  overflow: hidden;
-}
-.menu-is-open .header {
-  filter: none;
-} */
 
 .m-50x10 {
   margin-top: 1.25rem;
@@ -36,12 +14,20 @@
   margin-right: 3.125rem;
 }
 
+.m-50 {
+  margin-left: 3.125rem;
+  margin-right: 3.125rem;
+}
+
 .w-half {
   width: 50%;
 }
-
 .w-full {
   width: 100%;
+}
+
+.h-95x5 {
+  height: 95.5vh;
 }
 
 .flex-between {
@@ -49,18 +35,15 @@
   align-content: center;
   justify-content: space-between;
 }
-
 .flex-center {
   display: flex;
   justify-content: center;
 }
-
 .flex-evenly {
   display: flex;
   align-content: center;
   justify-content: space-evenly;
 }
-
 .flex-end {
   display: flex;
   justify-content: end;
@@ -71,20 +54,123 @@
   padding-right: 1rem;
 }
 
-.bg-gray-200 {
-  background-color: #cccccc;
+.btn {
+  width: 263px;
+  height: 77px;
+  padding: 10px 16px;
+  border-radius: 2px;
+  text-decoration: none;
+  border: 1px solid #000000;
+}
+.btn button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 50px;
+  background-color: transparent;
 }
 
-.bg-purple-200 {
-  background-color: royalblue;
+/* Frame 40 */
+.btnFrame-40 {
+  /* Auto Layout */
+  display: flex;
+  padding: 10px 16px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  left: 0px;
+  top: 477px;
+  width: 263px;
+  height: 77px;
+  position: static;
+  mix-blend-mode: normal;
+  /* Black */
+  border-radius: 2px;
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  /* Inside Auto Layout */
+  order: 2;
+  flex: none;
+  flex-grow: 0;
+  margin: 40px 0px;
 }
 
-.h\:text-decoration-underline:hover {
-  text-decoration: underline;
+/* Candles that feel as good as they look */
+.headline-title {
+  top: 0px;
+  left: 0px;
+  width: 600px;
+  height: 327px;
+  position: static;
+  font-size: 90px;
+  color: #000000;
+  line-height: 109px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  mix-blend-mode: normal;
+  /* Inside Auto Layout */
+  order: 0;
+  flex: none;
+  flex-grow: 0;
+  margin: 40px 0px;
+}
+
+.subhead-title {
+  /* A handcrafted cutting board that make you want to use it. */
+  left: 0px;
+  top: 367px;
+  width: 600px;
+  height: 70px;
+  position: static;
+  font-size: 30px;
+  color: #000000;
+  line-height: 36px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  mix-blend-mode: normal;
+  /* Inside Auto Layout */
+  order: 1;
+  flex: none;
+  flex-grow: 0;
+  margin: 40px 0px;
+}
+
+/* Frame 35 */
+/* Frame 37 */
+.framed-fixed {
+  width: 1440px;
+  height: 1024px;
+  /* Light Gray */
+  background: #CCCCCC;
+  mix-blend-mode: normal;
+}
+
+.ss1440x1024 {
+  width: 1440px;
+  height: 1024px;
+  margin: 0 auto;
+  position: relative;
+  background: #FFFFFF;
 }
 
 .text-black {
   color: #000000;
+}
+
+.bg-gray-200 {
+  background-color: #cccccc;
+}
+.bg-purple-200 {
+  background-color: royalblue;
+}
+.bg-green-500 {
+  background-color: green;
+}
+
+.text-decoration-none {
+  text-decoration: none;
 }
 
 .guzman {
@@ -95,199 +181,38 @@
 .font-inter {
   font-family: "Inter", sans-serif;
 }
-
+.font-arial {
+  font-family: Arial, Helvetica, sans-serif;
+}
 .font-bold {
   font-weight: bold;
 }
 
-.fixed {
-  position: fixed;
-}
-
-.m-50 {
+.framed {
+  margin-top: 1.25rem;
   margin-left: 3.125rem;
   margin-right: 3.125rem;
+  background-color: rgba(255, 255, 107, 0.3);
 }
-
-.bg-green-500 {
-  background-color: green;
+.framed .innerLayout li {
+  display: inline-block;
 }
-
-.h-95x5 {
-  height: 95.5vh;
-}
-
-/* body {
-  margin: 0;
-  height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
-  background: rgba(255, 255, 107, 0.3);
-} */
-
-/* a {
-  text-decoration: none;
+.framed .innerLayout li a {
+  display: inline-block;
   color: #000000;
+  font-weight: lighter;
 }
-
-header {
-  background: transparent;
+.framed .innerLayout .h\:text-decoration-underline::after {
+  width: 0;
+  height: 2px;
+  content: "";
+  display: block;
+  transition: width 0.3s;
+  background-color: #000000;
+}
+.framed .innerLayout .h\:text-decoration-underline:hover::after {
   width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  transition: all 300ms ease-in-out;
+  transition: width 0.3s;
 }
-header .logo {
-  font-weight: bold;
-  font-size: 1.125rem;
-}
-
-.scroll-down header {
-  transform: translate3d(0, -100%, 0);
-}
-
-.scroll-up header:hover {
-  background: #ffffff;
-}
-
-.menu-is-open {
-  overflow: hidden;
-}
-.menu-is-open header {
-  filter: none;
-}
-
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
-
-/* .inner {
-  width: 91.669%;
-  margin: 0 auto;
-  color: #000000;
-}
-.inner nav ul {
-  display: flex;
-  list-style-type: none;
-}
-.inner nav ul a {
-  padding: 1em 1.5em;
-}
-.inner nav ul a:hover {
-  text-decoration: underline;
-}
-.inner nav ul .active {
-  font-weight: bold;
-  position: relative;
-}
-
-.breadcrumbFrame {
-  width: 10%;
-  cursor: pointer;
-  margin-top: 4em;
-  font-size: 1rem;
-  line-height: normal;
-}
-
-.go-back:hover {
-  text-decoration: underline;
-}
-
-.pagination-current {
-  text-decoration: underline;
-}
-
-h1 {
-  margin-top: 4em;
-  font-size: 3rem;
-}
-
-h2 {
-  margin-top: 2em;
-}
-
-.subhead {
-  font-size: 1.5rem;
-  line-height: 1.4em;
-}
-
-p.blog {
-  font-size: 1.125rem;
-  line-height: 1.6em;
-}
-
-.guzman-navbar:hover {
-  display: none;
-}
-.guzman-navbar:hover:hover {
-  display: show;
-}
-
-.statusTag {
-  width: 49px;
-  height: 22px;
-  display: flex;
-  padding: 4px 12px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 12px;
-  background: rgba(245, 255, 0, 0.5);
-}
-
-/* productTag */
-.productTag {
-  /* Property 1=Out of Stuck */
-  /* Property 1=Default */
-}
-.productTag .devtool-productTag {
-  width: 131px;
-  height: 104px;
-  border-radius: 5px;
-  box-sizing: border-box;
-  border: 1px dashed #7B61FF;
-}
-.productTag .out-of-stuck {
-  top: 62px;
-  left: 20px;
-  width: 91px;
-  height: 22px;
-  display: flex;
-  padding: 4px 12px;
-  flex-direction: row;
-  align-items: center;
-  border-radius: 50px;
-  mix-blend-mode: normal;
-  justify-content: center;
-  background-color: rgba(255, 0, 0, 0.5);
-}
-.productTag .newTag {
-  top: 20px;
-  left: 20px;
-  width: 49px;
-  height: 22px;
-  display: flex;
-  padding: 4px 12px;
-  flex-direction: row;
-  align-items: center;
-  border-radius: 50px;
-  mix-blend-mode: normal;
-  justify-content: center;
-  background-color: rgba(245, 255, 0, 0.5);
-}
-
-.newsroomTag .devtool-newsroomTag {
-  width: 131px;
-  height: 104px;
-  border-radius: 5px;
-  box-sizing: border-box;
-  border: 1px dashed #7B61FF;
-}
-.newsroomTag .pressConferenceTag {
-  width: 49px;
-  font-weight: bold;
-} */
 
 /*# sourceMappingURL=wireframe.css.map */

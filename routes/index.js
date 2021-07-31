@@ -4,6 +4,8 @@ const router = express.Router();
 const guzman = 'Guzman';
 const colonGuzman = ': Guzman';
 
+const titleBlog = `${guzman} ${colonGuzman}`;
+
 // index page
 router.get('/', (req, res) => {
     res.render('pages/index', {
@@ -26,10 +28,12 @@ router.get('/modularb', (req, res) => {
     });
 });
 
-// 
-// router.get('/', (req, res) => {
-//     res.sendFile(path.join(__dirname + '/views/pages/index.html'));
-// });
+// Contact Page
+router.get('/contact', (req, res) => {
+    res.render('pages/contact', {
+        title: titleBlog
+    });
+});
 
 // router.get('/portfolio', (req, res) => {res.send('Portfolio Page Route')});
 // router.get('/contact', (req, res) => {res.send('Contact Page Route')});
