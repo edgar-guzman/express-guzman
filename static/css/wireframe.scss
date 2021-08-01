@@ -12,7 +12,7 @@ $white: #ffffff;
 *::after {
     margin: 0;
     padding: 0;
-    // text-decoration: none;
+    text-decoration: none;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -62,6 +62,11 @@ $white: #ffffff;
     }
 }
 
+.list-style {
+    &-none { list-style: none; }
+    &-type { list-style-type: none; }
+}
+
 .padding {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -87,34 +92,7 @@ $white: #ffffff;
 }
 
 /* Frame 40 */
-.btnFrame-40 {
-    /* Auto Layout */
-
-    display: flex;
-    padding: 10px 16px;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-
-    left: 0px;
-    top: 477px;
-    width: 263px;
-    height: 77px;
-    position: static;
-
-    mix-blend-mode: normal;
-    /* Black */
-    border-radius: 2px;
-    box-sizing: border-box;
-    border: 1px solid #000000;
-
-    /* Inside Auto Layout */
-
-    order: 2;
-    flex: none;
-    flex-grow: 0;
-    margin: 40px 0px;
-}
+// .btnFrame-40 {}
 
 // .shop-now {
 //     font-size: 50px;
@@ -143,10 +121,8 @@ $white: #ffffff;
     margin: 40px 0px;
 }
 
+/* A handcrafted cutting board that make you want to use it. */
 .subhead-title {
-    /* A handcrafted cutting board that make you want to use it. */
-
-
     left: 0px;
     top: 367px;
     width: 600px;
@@ -167,10 +143,6 @@ $white: #ffffff;
     flex-grow: 0;
     margin: 40px 0px;
 }
-
-/* Frame 35 */
-// .screenSize {
-// }
 
 /* Frame 37 */
 .framed-fixed {
@@ -267,14 +239,3 @@ $white: #ffffff;
         }
     }
 }
-
-// /* Extra small devices (phones, 600px and down) */
-// @media only screen and (max-width: 600px) {...}
-// /* Small devices (portrait tablets and large phones, 600px and up) */
-// @media only screen and (min-width: 600px) {...}
-// /* Medium devices (landscape tablets, 768px and up) */
-// @media only screen and (min-width: 768px) {...}
-// /* Large devices (laptops/desktops, 992px and up) */
-// @media only screen and (min-width: 992px) {...}
-// /* Extra large devices (large laptops and desktops, 1200px and up) */
-// @media only screen and (min-width: 1200px) {...}

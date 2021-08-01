@@ -17,7 +17,7 @@ app.use('/scripts', express.static(__dirname + '/static/scripts'));
 // // Rerouting Files
 app.use('/', routes);
 
-// app.use('/api/hello', hello);
+app.use('/api/hello', hello);
 
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`)
